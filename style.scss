@@ -1,0 +1,311 @@
+/*
+ Theme Name:   Wootique
+ Theme URI:    https://wordpress.org/themes/storefront
+ Description:  A Storefront child theme designed for small stores / boutiques.
+ Author:       WooThemes
+ Author URI:   http://woothemes.com
+ Template:     storefront
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  wootique
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@import 'bourbon';
+@import 'susy';
+@import '../storefront/sass/utils/variables';
+
+// Typography
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	letter-spacing: 0 !important;
+
+	a {
+		font-weight: 400;
+	}
+}
+
+.widget {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 400;
+	}
+}
+
+.site-branding h1 a {
+	font-weight: 400;
+}
+
+// General Styles
+.storefront-product-section,
+.hentry {
+	border-bottom-style: double;
+	border-bottom-width: 3px;
+}
+
+.woocommerce-tabs ul.tabs li a,
+.woocommerce-product-rating,
+.woocommerce-breadcrumb {
+	text-transform: uppercase;
+}
+
+.woocommerce-breadcrumb a {
+	text-transform: none;
+}
+
+// Buttons
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.added_to_cart,
+.widget-area .widget a.button,
+.site-header-cart .widget_shopping_cart a.button {
+	box-shadow:
+		inset 0 -.327em 1.618em rgba(0,0,0,0.1);
+}
+
+// Navigation
+.wootique-primary-navigation {
+	clear: both;
+	background: #111;
+	@include clearfix;
+}
+
+.main-navigation ul.menu > li > ul,
+.main-navigation ul.menu ul,
+.site-header-cart .widget_shopping_cart {
+	background: #111 !important;
+}
+
+// Posts
+.posted-on,
+.byline {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .7em;
+}
+
+.hentry .entry-header {
+	border-bottom-width: 0;
+}
+
+.widget h1 {
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(0,0,0,0.1) !important;
+	font-style: italic;
+}
+
+.hentry .entry-header h1 {
+	border-bottom: 4px double rgba(0,0,0,0.1);
+}
+
+.cat-links:before {
+	content: "\f07b";
+}
+
+.comments-link:before {
+	content: "\f075";
+}
+
+// Layout
+.col-full,
+.header-widget-region {
+	@include box-sizing(content-box);
+}
+
+.header-widget-region {
+	background: #fff;
+	margin: 0;
+}
+
+.site-content {
+	.col-full {
+		background: #fff;
+		padding: 1.618em;
+	}
+}
+
+.site-footer {
+	padding: 0;
+
+	.col-full {
+		background: #eee;
+		padding: 1.618em;
+	}
+}
+
+// Products
+ul.products {
+	li.product {
+		overflow: visible;
+
+		.price {
+			position: absolute;
+			top: .618em;
+			right: 0;
+			padding: .53em .857em;
+			background: #555;
+			color: #fff;
+			font-weight: 700;
+			box-shadow:
+				5px 0 0 0 #555;
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				right: -5px;
+				top: 100%;
+				border: 5px solid transparent;
+				border-top-color: darken(#555,20%);
+				border-left-width: 0;
+			}
+
+			del {
+				font-weight: 400;
+				opacity: 0.5;
+			}
+		}
+
+		.onsale {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	$horizontal_padding: 5.874em;
+
+	.col-full {
+		padding: 0 $horizontal_padding;
+	}
+
+	.wootique-primary-navigation {
+		margin: 0 -$horizontal_padding;
+		padding: 0 $horizontal_padding;
+		padding-top: 1.618em;
+		@include border-top-radius(.327em);
+	}
+
+	.site-branding, .site-search, .site-header-cart, .site-logo-anchor {
+		margin-bottom: 4.236em;
+	}
+
+	.site-header {
+		padding-top: 4.236em;
+	}
+
+	.main-navigation ul.menu > li > a, .main-navigation ul.nav-menu > li > a,
+	.site-header-cart .cart-contents {
+		padding-bottom: 1.618em !important;
+	}
+
+	.site-content,
+	.site-footer {
+		.col-full {
+			padding: 4.236em $horizontal_padding;
+		}
+	}
+
+	.site-footer {
+		.col-full {
+			padding: 2.618em $horizontal_padding;
+		}
+	}
+
+	.main-navigation {
+		ul.menu {
+			li {
+				&.current-menu-item {
+					> a {
+						position: relative;
+
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							border: .618em solid transparent;
+							border-top-color: #111;
+							margin-left: -.618em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Homepage
+	.page-template-template-homepage-php {
+		.content-area {
+			@include span(9 or 12);
+
+			.columns-3 {
+				ul.products {
+					li.product {
+						@include span(3 of 9);
+					}
+				}
+			}
+		}
+
+		.wootique-featured-products {
+			.storefront-product-section {
+				margin-left: -$horizontal_padding;
+				margin-right: -$horizontal_padding;
+				padding: 0 $horizontal_padding;
+				background: rgba(0,0,0,0.025);
+				padding-top: 3.632em;
+				padding-bottom: 1em;
+				border-top: 1px solid rgba(0,0,0,0.1);
+				border-bottom: 1px solid rgba(0,0,0,0.1);
+				box-shadow:
+					inset 0 0 0 .53em rgba(0,0,0,0.025);
+
+				ul.products {
+					li.product {
+						h3,
+						span,
+						.button,
+						.star-rating {
+							display: none;
+						}
+
+						img {
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			.hentry {
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+}

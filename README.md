@@ -1,1 +1,1 @@
-# storefront-wootique
+# Wootique
