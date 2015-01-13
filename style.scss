@@ -308,4 +308,38 @@ ul.products {
 			}
 		}
 	}
+
+	// Parallax hero commpatibility
+	.page-template-template-homepage {
+		.content-area {
+			.sph-hero {
+				margin-top: 0 !important;
+
+				&.full {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+
+		.wootique-featured-products {
+			.sph-hero {
+				&.full {
+					margin-left: -$horizontal_padding;
+					margin-right: -$horizontal_padding;
+				}
+			}
+		}
+	}
+
+	.sph-hero {
+		.col-full {
+			background-color: transparent;
+			padding: 0;
+		}
+
+		h1 {
+			font-weight: 400;
+		}
+	}
 }

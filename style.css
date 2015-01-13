@@ -218,4 +218,19 @@ ul.products li.product {
       margin: 0; }
   .page-template-template-homepage-php .wootique-featured-products .hentry {
     padding-bottom: 0;
-    border-bottom: 0; } }
+    border-bottom: 0; }
+
+  .page-template-template-homepage .content-area .sph-hero {
+    margin-top: 0 !important; }
+    .page-template-template-homepage .content-area .sph-hero.full {
+      margin-left: 0;
+      margin-right: 0; }
+  .page-template-template-homepage .wootique-featured-products .sph-hero.full {
+    margin-left: -5.874em;
+    margin-right: -5.874em; }
+
+  .sph-hero .col-full {
+    background-color: transparent;
+    padding: 0; }
+  .sph-hero h1 {
+    font-weight: 400; } }
