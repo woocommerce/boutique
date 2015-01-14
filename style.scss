@@ -37,7 +37,8 @@ h6 {
 	font-weight: 400;
 	letter-spacing: 0 !important;
 
-	a {
+	a,
+	label {
 		font-weight: 400;
 	}
 }
@@ -193,6 +194,17 @@ ul.products {
 		.onsale {
 			display: none;
 		}
+	}
+}
+
+// Checkout Customiser compatibility
+.woocommerce-checkout.scc-distraction-free-checkout {
+	.wootique-primary-navigation {
+		display: none;
+	}
+
+	.site-header {
+		margin-bottom: 0;
 	}
 }
 

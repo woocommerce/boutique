@@ -28,11 +28,17 @@ h6 {
   font-weight: 400;
   letter-spacing: 0 !important; }
   h1 a,
+  h1 label,
   h2 a,
+  h2 label,
   h3 a,
+  h3 label,
   h4 a,
+  h4 label,
   h5 a,
-  h6 a {
+  h5 label,
+  h6 a,
+  h6 label {
     font-weight: 400; }
 
 .widget h1,
@@ -150,6 +156,11 @@ ul.products li.product {
       opacity: 0.5; }
   ul.products li.product .onsale {
     display: none; }
+
+.woocommerce-checkout.scc-distraction-free-checkout .wootique-primary-navigation {
+  display: none; }
+.woocommerce-checkout.scc-distraction-free-checkout .site-header {
+  margin-bottom: 0; }
 
 @media screen and (min-width: 768px) {
   .col-full {
