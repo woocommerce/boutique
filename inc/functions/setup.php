@@ -36,14 +36,26 @@ add_filter( 'storefront_default_footer_link_color', 'wootique_color_blue' );
 add_filter( 'storefront_default_button_alt_background_color', 'wootique_color_blue' );
 
 /**
- * Light Blue
+ * Blue
  * @return  void
  */
-function wootique_color_light_orange( $color ) {
+function wootique_color_light_blue( $color ) {
+	$color = '#7fa1bf';
+	return $color;
+}
+add_filter( 'storefront_default_background_color', 'wootique_color_light_blue' );
+
+
+/**
+ * Orange
+ * @return  void
+ */
+function wootique_color_orange( $color ) {
 	$color = '#ce4a08';
 	return $color;
 }
-add_filter( 'storefront_default_background_color', 'wootique_color_light_orange' );
+add_filter( 'storefront_default_accent_color', 'wootique_color_orange' );
+
 
 /**
  * White

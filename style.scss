@@ -1,12 +1,12 @@
 /*
  Theme Name:   Wootique
  Theme URI:    https://wordpress.org/themes/storefront
- Description:  A Storefront child theme designed for small stores / boutiques.
+ Description:  A Storefront child theme designed for small stores / boutiques. Wootique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer.
  Author:       WooThemes
  Author URI:   http://woothemes.com
  Template:     storefront
  Version:      1.0.0
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Tags:         light, dark, blue, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  wootique
 */
 
@@ -17,6 +17,10 @@
 @import 'bourbon';
 @import 'susy';
 @import '../storefront/sass/utils/variables';
+
+body {
+	background: #7fa1bf;
+}
 
 // Typography
 body,
@@ -75,7 +79,7 @@ h6 {
 	text-transform: none;
 }
 
-// Buttons
+// Forms
 button,
 input[type="button"],
 input[type="reset"],
@@ -89,6 +93,10 @@ input[type="submit"],
 }
 
 // Navigation
+button.menu-toggle {
+	margin-bottom: 0;
+}
+
 .wootique-primary-navigation {
 	clear: both;
 	background: #111;
@@ -158,6 +166,14 @@ input[type="submit"],
 	}
 }
 
+.woocommerce-breadcrumb {
+	margin-top: 0;
+}
+
+.site-header-cart {
+	margin-bottom: 0;
+}
+
 // Products
 ul.products {
 	li.product {
@@ -166,7 +182,7 @@ ul.products {
 		.price {
 			position: absolute;
 			top: .618em;
-			right: 0;
+			right: 1px;
 			padding: .53em .857em;
 			background: #555;
 			color: #fff;
@@ -194,7 +210,33 @@ ul.products {
 		.onsale {
 			display: none;
 		}
+
+		img {
+			border: 1px solid rgba(0,0,0,0.1);
+		}
 	}
+}
+
+.single-product {
+	.images {
+		img {
+			border: 1px solid rgba(0,0,0,0.1);
+		}
+	}
+}
+
+// Widgets
+.widget_product_categories ul li:before,
+.widget_categories ul li:before {
+	content: "\f07b" !important;
+}
+
+.widget_recent_comments ul li:before {
+	content: "\f075" !important;
+}
+
+.widget_archive ul li:before {
+	content: "\f07c" !important;
 }
 
 // Checkout Customiser compatibility
