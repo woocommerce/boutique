@@ -1,18 +1,18 @@
 /*
- Theme Name:   Wootique
+ Theme Name:   Boutique
  Theme URI:    https://wordpress.org/themes/storefront
- Description:  A Storefront child theme designed for small stores / boutiques. Wootique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer.
+ Description:  A Storefront child theme designed for small stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer.
  Author:       WooThemes
  Author URI:   http://woothemes.com
  Template:     storefront
  Version:      1.0.0
  Tags:         light, dark, blue, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  wootique
+ Text Domain:  boutique
 */
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 body {
-  background: #7fa1bf; }
+  background: #111111; }
 
 body,
 button,
@@ -81,10 +81,10 @@ input[type="submit"],
 button.menu-toggle {
   margin-bottom: 0; }
 
-.wootique-primary-navigation {
+.boutique-primary-navigation {
   clear: both;
-  background: #111; }
-  .wootique-primary-navigation:after {
+  background: #222; }
+  .boutique-primary-navigation:after {
     content: "";
     display: table;
     clear: both; }
@@ -92,7 +92,7 @@ button.menu-toggle {
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
 .site-header-cart .widget_shopping_cart {
-  background: #111 !important; }
+  background: #222 !important; }
 
 .posted-on,
 .byline {
@@ -129,12 +129,13 @@ button.menu-toggle {
 
 .site-content .col-full {
   background: #fff;
-  padding: 1.618em; }
+  padding: 1.618em;
+  box-shadow: inset 0 0 0 .53em #f6f6f6; }
 
 .site-footer {
   padding: 0; }
   .site-footer .col-full {
-    background: #eee;
+    background: #f6f6f6;
     padding: 1.618em; }
 
 .woocommerce-breadcrumb {
@@ -184,7 +185,7 @@ ul.products li.product {
 .widget_archive ul li:before {
   content: "\f07c" !important; }
 
-.woocommerce-checkout.scc-distraction-free-checkout .wootique-primary-navigation {
+.woocommerce-checkout.scc-distraction-free-checkout .boutique-primary-navigation {
   display: none; }
 .woocommerce-checkout.scc-distraction-free-checkout .site-header {
   margin-bottom: 0; }
@@ -193,12 +194,13 @@ ul.products li.product {
   .col-full {
     padding: 0 5.874em; }
 
-  .wootique-primary-navigation {
+  .boutique-primary-navigation {
     margin: -5.874em;
     padding: 0 5.874em;
     padding-top: 1.618em;
     border-top-left-radius: 0.327em;
-    border-top-right-radius: 0.327em; }
+    border-top-right-radius: 0.327em;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -0.53em rgba(0, 0, 0, 0.05); }
 
   .site-branding, .site-search, .site-header-cart, .site-logo-anchor {
     margin-bottom: 4.236em; }
@@ -226,8 +228,11 @@ ul.products li.product {
       top: 100%;
       left: 50%;
       border: .618em solid transparent;
-      border-top-color: #111;
+      border-top-color: #222;
       margin-left: -.618em; }
+  .main-navigation ul.menu ul,
+  .main-navigation ul.nav-menu ul {
+    background: #222; }
 
   .page-template-template-homepage-php .content-area {
     width: 73.9130434783%;
@@ -237,7 +242,7 @@ ul.products li.product {
       width: 29.4117647059%;
       float: left;
       margin-right: 5.8823529412%; }
-  .page-template-template-homepage-php .wootique-featured-products .storefront-product-section {
+  .page-template-template-homepage-php .boutique-featured-products .storefront-product-section {
     margin-left: -5.874em;
     margin-right: -5.874em;
     padding: 0 5.874em;
@@ -247,14 +252,14 @@ ul.products li.product {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 0 0.53em rgba(0, 0, 0, 0.025); }
-    .page-template-template-homepage-php .wootique-featured-products .storefront-product-section ul.products li.product h3,
-    .page-template-template-homepage-php .wootique-featured-products .storefront-product-section ul.products li.product span,
-    .page-template-template-homepage-php .wootique-featured-products .storefront-product-section ul.products li.product .button,
-    .page-template-template-homepage-php .wootique-featured-products .storefront-product-section ul.products li.product .star-rating {
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h3,
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product span,
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .button,
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .star-rating {
       display: none; }
-    .page-template-template-homepage-php .wootique-featured-products .storefront-product-section ul.products li.product img {
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product img {
       margin: 0; }
-  .page-template-template-homepage-php .wootique-featured-products .hentry {
+  .page-template-template-homepage-php .boutique-featured-products .hentry {
     padding-bottom: 0;
     border-bottom: 0; }
 
@@ -263,7 +268,7 @@ ul.products li.product {
     .page-template-template-homepage .content-area .sph-hero.full {
       margin-left: 0;
       margin-right: 0; }
-  .page-template-template-homepage .wootique-featured-products .sph-hero.full {
+  .page-template-template-homepage .boutique-featured-products .sph-hero.full {
     margin-left: -5.874em;
     margin-right: -5.874em; }
 

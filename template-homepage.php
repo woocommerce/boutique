@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div class="wootique-featured-products site-main">
-		<?php do_action( 'wootique_before_homepage_content' ); ?>
+	<div class="boutique-featured-products site-main">
+		<?php do_action( 'boutique_before_homepage_content' ); ?>
 	</div>
 
 	<div id="primary" class="content-area">

@@ -1,6 +1,6 @@
 <?php
 /**
- * Wootique engine room
+ * Boutique engine room
  *
  * @package storefront
  */
