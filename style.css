@@ -262,6 +262,8 @@ ul.products li.product {
   .page-template-template-homepage-php .boutique-featured-products .hentry {
     padding-bottom: 0;
     border-bottom: 0; }
+  .page-template-template-homepage-php .boutique-featured-products .entry-header h1 {
+    text-align: center; }
 
   .page-template-template-homepage .content-area .sph-hero {
     margin-top: 0 !important; }
