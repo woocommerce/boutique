@@ -1,6 +1,6 @@
 <?php
 /**
- * Customises the stock Storefront homepage template to include the sidebar and some other hooks.
+ * Customises the stock Storefront homepage template to include the sidebar and the boutique_before_homepage_content hook.
  *
  * Template name: Homepage
  *

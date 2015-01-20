@@ -1,7 +1,7 @@
 /*
  Theme Name:   Boutique
  Theme URI:    https://wordpress.org/themes/storefront
- Description:  A Storefront child theme designed for small stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer.
+ Description:  A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
  Author:       WooThemes
  Author URI:   http://woothemes.com
  Template:     storefront
@@ -77,6 +77,41 @@ h6 {
 
 .woocommerce-breadcrumb a {
 	text-transform: none;
+}
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-noreviews,
+p.no-comments {
+	color: inherit;
+	background: rgba(0,0,0,0.025);
+
+	a,
+	a:hover,
+	.button,
+	.button:hover {
+		color: inherit;
+		font-weight: normal;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.woocommerce-error {
+	border-left-color: $error;
+}
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+	border-left-color: $info;
+}
+
+.woocommerce-message {
+	border-left-color: $success;
 }
 
 // Forms
@@ -232,12 +267,27 @@ ul.products {
 	content: "\f07b" !important;
 }
 
+.widget_product_categories,
+.widget_categories {
+	ul {
+		li.current-cat {
+			&:before {
+				content: "\f07c" !important;
+			}
+		}
+	}
+}
+
 .widget_recent_comments ul li:before {
 	content: "\f075" !important;
 }
 
 .widget_archive ul li:before {
 	content: "\f07c" !important;
+}
+
+.widget_recent_entries ul li:before, .widget_pages ul li:before {
+	content: "\f15c" !important;
 }
 
 // Checkout Customiser compatibility

@@ -6,11 +6,19 @@
  */
 
 /**
+ * Assign the Boutique version to a var
+ */
+$theme 					= wp_get_theme( 'boutique' );
+$boutique_version 		= $theme['Version'];
+
+/**
  * Enqueue Storefront Styles
  * @return void
  */
 function boutique_enqueue_styles() {
-    wp_enqueue_style( 'storefront-style', get_template_directory_uri() . '/style.css' );
+	global $storefront_version;
+
+    wp_enqueue_style( 'storefront-style', get_template_directory_uri() . '/style.css', $storefront_version );
 }
 
 /**
@@ -18,7 +26,9 @@ function boutique_enqueue_styles() {
  * @return void
  */
 function boutique_enqueue_child_styles() {
-    wp_enqueue_style( 'boutique-style', get_stylesheet_uri(), array( 'storefront-style' ) );
+	global $boutique_version;
+
+    wp_enqueue_style( 'boutique-style', get_stylesheet_uri(), array( 'storefront-style' ), $boutique_version );
     wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:400,700,400italic', array( 'storefront-style' ) );
     wp_enqueue_style( 'playfair-display', '//fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic', array( 'storefront-style' ) );
 }

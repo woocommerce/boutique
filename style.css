@@ -1,7 +1,7 @@
 /*
  Theme Name:   Boutique
  Theme URI:    https://wordpress.org/themes/storefront
- Description:  A Storefront child theme designed for small stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer.
+ Description:  A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
  Author:       WooThemes
  Author URI:   http://woothemes.com
  Template:     storefront
@@ -67,6 +67,53 @@ h6 {
 
 .woocommerce-breadcrumb a {
   text-transform: none; }
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-noreviews,
+p.no-comments {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.025); }
+  .woocommerce-error a,
+  .woocommerce-error a:hover,
+  .woocommerce-error .button,
+  .woocommerce-error .button:hover,
+  .woocommerce-info a,
+  .woocommerce-info a:hover,
+  .woocommerce-info .button,
+  .woocommerce-info .button:hover,
+  .woocommerce-message a,
+  .woocommerce-message a:hover,
+  .woocommerce-message .button,
+  .woocommerce-message .button:hover,
+  .woocommerce-noreviews a,
+  .woocommerce-noreviews a:hover,
+  .woocommerce-noreviews .button,
+  .woocommerce-noreviews .button:hover,
+  p.no-comments a,
+  p.no-comments a:hover,
+  p.no-comments .button,
+  p.no-comments .button:hover {
+    color: inherit;
+    font-weight: normal; }
+  .woocommerce-error a,
+  .woocommerce-info a,
+  .woocommerce-message a,
+  .woocommerce-noreviews a,
+  p.no-comments a {
+    text-decoration: underline; }
+
+.woocommerce-error {
+  border-left-color: #e2401c; }
+
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+  border-left-color: #3D9CD2; }
+
+.woocommerce-message {
+  border-left-color: #17ba6f; }
 
 button,
 input[type="button"],
@@ -179,11 +226,18 @@ ul.products li.product {
 .widget_categories ul li:before {
   content: "\f07b" !important; }
 
+.widget_product_categories ul li.current-cat:before,
+.widget_categories ul li.current-cat:before {
+  content: "\f07c" !important; }
+
 .widget_recent_comments ul li:before {
   content: "\f075" !important; }
 
 .widget_archive ul li:before {
   content: "\f07c" !important; }
+
+.widget_recent_entries ul li:before, .widget_pages ul li:before {
+  content: "\f15c" !important; }
 
 .woocommerce-checkout.scc-distraction-free-checkout .boutique-primary-navigation {
   display: none; }
