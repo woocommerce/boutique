@@ -5,7 +5,7 @@
  Author:       WooThemes
  Author URI:   http://woothemes.com
  Template:     storefront
- Version:      1.0.0
+ Version:      1.0.1
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  boutique
 */
@@ -181,8 +181,11 @@ button.menu-toggle {
 }
 
 .header-widget-region {
-	background: #fff;
 	margin: 0;
+
+	.col-full {
+		background: #fff;
+	}
 }
 
 .site-content {
