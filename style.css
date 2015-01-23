@@ -175,7 +175,8 @@ button.menu-toggle {
 .header-widget-region {
   margin: 0; }
   .header-widget-region .col-full {
-    background: #fff; }
+    background: #fff;
+    padding: 0 1em; }
 
 .site-content .col-full {
   background: #fff;
@@ -251,9 +252,6 @@ ul.products li.product {
   background: transparent;
   box-shadow: none; }
 
-@media screen and (width: 768px) {
-  .col-full {
-    padding: 0 1em; } }
 @media screen and (min-width: 768px) {
   .col-full {
     padding: 0 5.874em; }
@@ -276,7 +274,8 @@ ul.products li.product {
     padding-bottom: 1.618em !important; }
 
   .site-content .col-full,
-  .site-footer .col-full {
+  .site-footer .col-full,
+  .header-widget-region .col-full {
     padding: 4.236em 5.874em; }
 
   .site-footer .col-full {
