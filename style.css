@@ -408,10 +408,13 @@ ul.products li.product {
 
   .site-main .sph-hero .overlay {
     padding: 4.236em; } }
-@media screen and (width: 768px) {
+@media screen and (max-width: 800px) {
   .col-full {
     padding: 0 1em;
     margin: 0 1em; }
+
+  .header-widget-region .col-full {
+    padding: 1em; }
 
   .boutique-featured-products .sph-hero.full {
     margin-left: -1em;
