@@ -1,15 +1,17 @@
 /*
- Theme Name:   Boutique
- Theme URI:    https://wordpress.org/themes/storefront
- Description:  A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
- Author:       WooThemes
- Author URI:   http://woothemes.com
- Template:     storefront
- Version:      1.0.1
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  boutique
+Theme Name:		Boutique
+Theme URI:		https://wordpress.org/themes/storefront
+Description:	A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
+Author:			WooThemes
+Author URI:		http://woothemes.com
+Template:		storefront
+Version:		1.0.1
+License: 		GNU General Public License v2 or later
+License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
+Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:	boutique
 */
-/* =Theme customization starts here
+/* =Boutique styles starts here
 -------------------------------------------------------------- */
 body {
   background: #303030;
