@@ -20,6 +20,7 @@
 
 body {
 	background: #303030;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 // Typography
@@ -136,6 +137,7 @@ button.menu-toggle {
 	clear: both;
 	background: #222;
 	@include clearfix;
+	-webkit-font-smoothing: antialiased;
 }
 
 .main-navigation ul.menu > li > ul,
@@ -405,15 +407,90 @@ ul.products {
 
 				ul.products {
 					li.product {
-						h3,
 						span,
 						.button,
 						.star-rating {
 							display: none;
 						}
 
+						h3,
+						.price {
+							display: block;
+							position: absolute;
+						}
+
+						h3 {
+							top: 0;
+							left: 0;
+							z-index: 99;
+							-webkit-transition: all ease .2s;
+							transition: all ease .2s;
+							color: #f6f6f6;
+							opacity: 0;
+							width: 100%;
+							text-align: left;
+							padding: 1.618em;
+							color: #303030;
+							opacity: 0;
+						}
+
+						.price {
+							bottom: 0;
+							right: 0;
+							top: auto;
+							z-index: 99;
+
+							span {
+								display: block;
+							}
+						}
+
 						img {
 							margin: 0;
+						}
+
+						> a {
+							display: block;
+
+							&:after {
+								content: "";
+								display: block;
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								background: rgba(#fff,.9);
+								border: 1px solid #fff;
+								opacity: 0;
+								-webkit-transition: all ease .2s;
+								transition: all ease .2s;
+								box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+							}
+
+							&:before {
+								content: "";
+								display: block;
+								position: absolute;
+								top: .618em;
+								left: .618em;
+								right: .618em;
+								bottom: .618em;
+								border: 4px double rgba(0,0,0,0.1);
+								z-index: 9;
+								opacity: 0;
+								-webkit-transition: all ease .2s;
+								transition: all ease .2s;
+							}
+
+							&:hover {
+
+								h3,
+								&:after,
+								&:before {
+									opacity: 1;
+								}
+							}
 						}
 					}
 				}
