@@ -425,4 +425,7 @@ ul.products li.product {
   .site-content .col-full,
   .site-footer .col-full {
     padding-left: 1em;
-    padding-right: 1em; } }
+    padding-right: 1em; }
+
+  .site-header-cart .cart-contents:after {
+    display: none; } }
