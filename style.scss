@@ -306,6 +306,20 @@ ul.products {
 	}
 }
 
+// Storefront Parallax Hero compatibility
+.sph-hero {
+	.col-full {
+		background: transparent;
+		box-shadow: none;
+	}
+}
+
+@media screen and (width: 768px) {
+	.col-full {
+		padding: 0 1em;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	$horizontal_padding: 5.874em;
 
@@ -552,4 +566,40 @@ ul.products {
 			font-weight: 400;
 		}
 	}
+
+	.site-main {
+		.sph-hero {
+			.overlay {
+				padding: 4.236em;
+			}
+		}
+	}
+}
+
+@media screen and (width: 768px) {
+	.col-full {
+		padding: 0 1em;
+		margin: 0 1em;
+	}
+
+	.boutique-featured-products .sph-hero.full {
+		margin-left: -1em;
+		margin-right: -1em;
+	}
+
+	.boutique-featured-products .storefront-product-section,
+	.boutique-primary-navigation {
+		margin-left: -1em;
+		margin-right: -1em;
+		padding: 0 1em;
+	}
+
+	.site-content,
+	.site-footer {
+		.col-full {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	}
+
 }
