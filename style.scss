@@ -530,6 +530,16 @@ ul.products {
 				}
 			}
 		}
+
+		&.left-sidebar {
+			.content-area {
+				@include span(last 9 of 12);
+			}
+
+			.widget-area {
+				@include span(3 of 12);
+			}
+		}
 	}
 
 	.sph-hero {

@@ -383,6 +383,14 @@ ul.products li.product {
   .page-template-template-homepage .boutique-featured-products .sph-hero.full {
     margin-left: -5.874em;
     margin-right: -5.874em; }
+  .page-template-template-homepage.left-sidebar .content-area {
+    width: 73.9130434783%;
+    float: right;
+    margin-right: 0; }
+  .page-template-template-homepage.left-sidebar .widget-area {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%; }
 
   .sph-hero .col-full {
     background-color: transparent;
