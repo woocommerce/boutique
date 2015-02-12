@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.0.1
+Version:		1.1.0
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -191,6 +191,10 @@ button.menu-toggle {
 		background: #fff;
 		padding: 0 1em;
 	}
+
+	.widget {
+		padding-top: 2.244em;
+	}
 }
 
 .site-content {
@@ -298,6 +302,13 @@ ul.products {
 	content: "\f15c" !important;
 }
 
+// Homepage template
+.page-template-template-homepage {
+	.site-main {
+		padding-top: 0;
+	}
+}
+
 // Checkout Customiser compatibility
 .woocommerce-checkout.scc-distraction-free-checkout {
 	.boutique-primary-navigation {
@@ -351,6 +362,13 @@ ul.products {
 	.header-widget-region {
 		.col-full {
 			padding: 4.236em $horizontal_padding;
+		}
+	}
+
+	.header-widget-region {
+		.col-full {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 
@@ -524,7 +542,8 @@ ul.products {
 	// Parallax hero commpatibility
 	.page-template-template-homepage {
 		.content-area {
-			.sph-hero {
+			.sph-hero,
+			.sprh-hero {
 				margin-top: 0 !important;
 
 				&.full {
@@ -535,7 +554,8 @@ ul.products {
 		}
 
 		.boutique-featured-products {
-			.sph-hero {
+			.sph-hero,
+			.sprh-hero {
 				&.full {
 					margin-left: -$horizontal_padding;
 					margin-right: -$horizontal_padding;
@@ -554,7 +574,8 @@ ul.products {
 		}
 	}
 
-	.sph-hero {
+	.sph-hero,
+	.sprh-hero {
 		.col-full {
 			background-color: transparent;
 			padding: 0;
@@ -566,7 +587,8 @@ ul.products {
 	}
 
 	.site-main {
-		.sph-hero {
+		.sph-hero,
+		.sprh-hero {
 			.overlay {
 				padding: 4.236em;
 			}
@@ -580,13 +602,8 @@ ul.products {
 		margin: 0 1em;
 	}
 
-	.header-widget-region {
-		.col-full {
-			padding: 1em;
-		}
-	}
-
-	.boutique-featured-products .sph-hero.full {
+	.boutique-featured-products .sph-hero.full,
+	.boutique-featured-products .sprh-hero.full {
 		margin-left: -1em;
 		margin-right: -1em;
 	}

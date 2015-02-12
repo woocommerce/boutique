@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.0.1
+Version:		1.1.0
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -135,10 +135,10 @@ button.menu-toggle {
   clear: both;
   background: #222;
   -webkit-font-smoothing: antialiased; }
-  .boutique-primary-navigation:after {
+  .boutique-primary-navigation::after {
+    clear: both;
     content: "";
-    display: table;
-    clear: both; }
+    display: table; }
 
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
@@ -179,6 +179,8 @@ button.menu-toggle {
   .header-widget-region .col-full {
     background: #fff;
     padding: 0 1em; }
+  .header-widget-region .widget {
+    padding-top: 2.244em; }
 
 .site-content .col-full {
   background: #fff;
@@ -245,6 +247,9 @@ ul.products li.product {
 .widget_recent_entries ul li:before, .widget_pages ul li:before {
   content: "\f15c" !important; }
 
+.page-template-template-homepage .site-main {
+  padding-top: 0; }
+
 .woocommerce-checkout.scc-distraction-free-checkout .boutique-primary-navigation {
   display: none; }
 .woocommerce-checkout.scc-distraction-free-checkout .site-header {
@@ -279,6 +284,10 @@ ul.products li.product {
   .site-footer .col-full,
   .header-widget-region .col-full {
     padding: 4.236em 5.874em; }
+
+  .header-widget-region .col-full {
+    padding-top: 0;
+    padding-bottom: 0; }
 
   .site-footer .col-full {
     padding: 2.618em 5.874em; }
@@ -383,12 +392,15 @@ ul.products li.product {
   .page-template-template-homepage-php .boutique-featured-products .entry-header h1 {
     text-align: center; }
 
-  .page-template-template-homepage .content-area .sph-hero {
+  .page-template-template-homepage .content-area .sph-hero,
+  .page-template-template-homepage .content-area .sprh-hero {
     margin-top: 0 !important; }
-    .page-template-template-homepage .content-area .sph-hero.full {
+    .page-template-template-homepage .content-area .sph-hero.full,
+    .page-template-template-homepage .content-area .sprh-hero.full {
       margin-left: 0;
       margin-right: 0; }
-  .page-template-template-homepage .boutique-featured-products .sph-hero.full {
+  .page-template-template-homepage .boutique-featured-products .sph-hero.full,
+  .page-template-template-homepage .boutique-featured-products .sprh-hero.full {
     margin-left: -5.874em;
     margin-right: -5.874em; }
   .page-template-template-homepage.left-sidebar .content-area {
@@ -400,23 +412,24 @@ ul.products li.product {
     float: left;
     margin-right: 4.347826087%; }
 
-  .sph-hero .col-full {
+  .sph-hero .col-full,
+  .sprh-hero .col-full {
     background-color: transparent;
     padding: 0; }
-  .sph-hero h1 {
+  .sph-hero h1,
+  .sprh-hero h1 {
     font-weight: 400; }
 
-  .site-main .sph-hero .overlay {
+  .site-main .sph-hero .overlay,
+  .site-main .sprh-hero .overlay {
     padding: 4.236em; } }
 @media screen and (max-width: 800px) {
   .col-full {
     padding: 0 1em;
     margin: 0 1em; }
 
-  .header-widget-region .col-full {
-    padding: 1em; }
-
-  .boutique-featured-products .sph-hero.full {
+  .boutique-featured-products .sph-hero.full,
+  .boutique-featured-products .sprh-hero.full {
     margin-left: -1em;
     margin-right: -1em; }
 
