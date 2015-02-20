@@ -1,6 +1,6 @@
 # Boutique Changelog
 
-### *2015.02.12* - 1.1.0
+### *2015.02.20* - 1.1.0
 * **New** - Integration with Storefront Product Hero.
 * **Tweak** - Featured product treatment.
 * **Tweak** - Improvements to display on tablets in portrait orientation.

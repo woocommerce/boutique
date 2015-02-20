@@ -118,6 +118,10 @@ p.no-comments {
 .woocommerce-message {
   border-left-color: #17ba6f; }
 
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header {
+  margin-bottom: 0; }
+
 button,
 input[type="button"],
 input[type="reset"],

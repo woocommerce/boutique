@@ -117,6 +117,11 @@ p.no-comments {
 	border-left-color: $success;
 }
 
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header {
+	margin-bottom: 0;
+}
+
 // Forms
 button,
 input[type="button"],
