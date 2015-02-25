@@ -7,7 +7,7 @@ A Storefront child theme designed for small WooCommerce stores / boutiques. *Bou
 Boutique is a child theme for Storefront meaning that both themes must be installed if you want to run Boutique on your store.
 
 ## Documentation
-Be sure to checkout the [Boutique documentation](http://docs.woothemes.com/document/boutique-store…nt-child-theme/) for help getting started.
+Be sure to checkout the [Boutique documentation](http://docs.woothemes.com/document/boutique-storefront-child-theme/) for help getting started.
 
 ## Extend
 Get access to additional customisation options via [Storefront extensions](http://www.woothemes.com/product-category/storefront-extensions/).
