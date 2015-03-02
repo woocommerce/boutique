@@ -1,5 +1,8 @@
 # Boutique Changelog
 
+### *2015.03.02* - 1.1.1
+* **Fix** - Broken documentation link in readme.
+
 ### *2015.02.20* - 1.1.0
 * **New** - Integration with Storefront Product Hero.
 * **Tweak** - Featured product treatment.
