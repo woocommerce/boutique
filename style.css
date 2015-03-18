@@ -119,7 +119,8 @@ p.no-comments {
   border-left-color: #17ba6f; }
 
 .home.blog .site-header,
-.home.page:not(.page-template-template-homepage) .site-header {
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
   margin-bottom: 0; }
 
 button,
