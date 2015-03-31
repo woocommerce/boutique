@@ -47,7 +47,7 @@ function boutique_color_black( $color ) {
  * @return  string color
  */
 function boutique_color_gold( $color ) {
-	$color = '#999e43';
+	$color = '#7c7235';
 	return $color;
 }
 

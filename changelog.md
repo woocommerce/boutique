@@ -1,8 +1,9 @@
 # Boutique Changelog
 
-### *2015.03.18* - 1.1.1
+### *2015.03.31* - 1.1.1
 * **Fix** - Broken documentation link in readme.
 * **Fix** - Site header margin when using shop page as homepage.
+* **Tweak** - Improved contrast of default link color.
 
 ### *2015.02.20* - 1.1.0
 * **New** - Integration with Storefront Product Hero.
