@@ -1,5 +1,8 @@
 # Boutique Changelog
 
+### *2015.04.30* - 1.1.2
+* **Fix** - Cart icon on handheld view.
+
 ### *2015.03.31* - 1.1.1
 * **Fix** - Broken documentation link in readme.
 * **Fix** - Site header margin when using shop page as homepage.
