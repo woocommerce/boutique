@@ -1,6 +1,6 @@
 /*
 Theme Name:		Boutique
-Theme URI:		https://wordpress.org/themes/storefront
+Theme URI:		https://woothemes.com/products/boutique/
 Description:	A Storefront child theme designed for small WooCommerce stores / boutiques. Boutique features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
 Author:			WooThemes
 Author URI:		http://woothemes.com
@@ -146,12 +146,13 @@ button.menu-toggle {
 	background: #222;
 	@include clearfix;
 	-webkit-font-smoothing: antialiased;
+	position: relative;
 }
 
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
 .site-header-cart .widget_shopping_cart {
-	background: #222 !important;
+	background: #222;
 }
 
 // Posts
@@ -410,6 +411,17 @@ ul.products {
 		ul.nav-menu {
 			ul {
 				background: #222;
+			}
+		}
+
+		.smm-mega-menu {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 4.236em 5.874em;
+			background-color: #222 !important;
+
+			ul {
+				background-color: transparent !important;
 			}
 		}
 	}
