@@ -20,6 +20,8 @@ add_action( 'init', 'boutique_extension_support', -1 );
  */
 function boutique_customize_register( $wp_customize ) {
 	$wp_customize->remove_section( 'storefront_homepage' );
+	$wp_customize->remove_control( 'sph_layout' );
+	$wp_customize->remove_control( 'sph_hero_full_height' );
 }
 add_action( 'customize_register', 'boutique_customize_register', 99 );
 
@@ -37,5 +39,7 @@ function boutique_set_theme_mods() {
 	remove_theme_mod( 'swc_homepage_top_rated_products_title' );
 	remove_theme_mod( 'swc_homepage_on_sale' );
 	remove_theme_mod( 'swc_homepage_on_sale_products_title' );
+	remove_theme_mod( 'sph_layout' );
+	remove_theme_mod( 'sph_hero_full_height' );
 }
 add_action( 'after_switch_theme', 'boutique_set_theme_mods' );
