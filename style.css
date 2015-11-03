@@ -160,10 +160,12 @@ button.menu-toggle {
 .hentry .entry-header {
   border-bottom-width: 0; }
 
-.widget h1 {
+.widget h3.widget-title,
+.widget h2.widgettitle {
   border-bottom-width: 1px;
   border-bottom-color: rgba(0, 0, 0, 0.1) !important;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: 400; }
 
 .hentry .entry-header h1 {
   border-bottom: 4px double rgba(0, 0, 0, 0.1); }

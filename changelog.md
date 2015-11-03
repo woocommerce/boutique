@@ -3,6 +3,7 @@
 ### *2015.11.03* - 1.2.0
 * **New** - Integration with Storefront Mega Menus.
 * **Fix** - Removed full width setting option when using Parallax hero on the homepage as it cannot be applied.
+* **Tweak** - Widget title styling.
 
 ### *2015.04.30* - 1.1.2
 * **Fix** - Cart icon on handheld view.
