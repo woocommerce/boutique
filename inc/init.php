@@ -25,6 +25,13 @@ require get_stylesheet_directory() . '/inc/functions/setup.php';
 require get_stylesheet_directory() . '/inc/structure/structure.php';
 
 /**
+ * Customizer.
+ * Any functions related to the Customizer.
+ */
+require get_stylesheet_directory() . '/inc/customizer/hooks.php';
+require get_stylesheet_directory() . '/inc/customizer/display.php';
+
+/**
  * Storefront Extensions.
  * Declares incompatibility with specific extensions.
  * Modifies extensions current behaviour to suit the child theme.
