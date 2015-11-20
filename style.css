@@ -139,8 +139,7 @@ button.menu-toggle {
 .boutique-primary-navigation {
   clear: both;
   background: #222;
-  -webkit-font-smoothing: antialiased;
-  position: relative; }
+  -webkit-font-smoothing: antialiased; }
   .boutique-primary-navigation::after {
     clear: both;
     content: "";
@@ -272,6 +271,7 @@ ul.products li.product {
     padding: 0 5.874em; }
 
   .boutique-primary-navigation {
+    position: relative;
     margin: -5.874em;
     padding: 0 5.874em;
     border-top-left-radius: 0.327em;

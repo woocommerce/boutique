@@ -146,7 +146,6 @@ button.menu-toggle {
 	background: #222;
 	@include clearfix;
 	-webkit-font-smoothing: antialiased;
-	position: relative;
 }
 
 .main-navigation ul.menu > li > ul,
@@ -345,6 +344,7 @@ ul.products {
 	}
 
 	.boutique-primary-navigation {
+		position: relative;
 		margin: 0 -$horizontal_padding;
 		padding: 0 $horizontal_padding;
 		@include border-top-radius(.327em);
