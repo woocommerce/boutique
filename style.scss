@@ -143,7 +143,7 @@ button.menu-toggle {
 
 .boutique-primary-navigation {
 	clear: both;
-	background: #222;
+	background: #212121;
 	@include clearfix;
 	-webkit-font-smoothing: antialiased;
 }
@@ -151,7 +151,7 @@ button.menu-toggle {
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
 .site-header-cart .widget_shopping_cart {
-	background: #222;
+	background: #212121;
 }
 
 // Posts
@@ -189,7 +189,7 @@ button.menu-toggle {
 // Layout
 .col-full,
 .header-widget-region {
-	@include box-sizing(content-box);
+	box-sizing: content-box;
 }
 
 .header-widget-region {
@@ -401,7 +401,7 @@ ul.products {
 							top: 100%;
 							left: 50%;
 							border: .618em solid transparent;
-							border-top-color: #222;
+							border-top-color: #212121;
 							margin-left: -.618em;
 						}
 					}
@@ -412,7 +412,7 @@ ul.products {
 		ul.menu,
 		ul.nav-menu {
 			ul {
-				background: #222;
+				background: #212121;
 			}
 		}
 
@@ -420,7 +420,7 @@ ul.products {
 			margin-left: 0;
 			margin-right: 0;
 			padding: 4.236em 5.874em;
-			background-color: #222 !important;
+			background-color: #212121 !important;
 
 			ul {
 				background-color: transparent !important;

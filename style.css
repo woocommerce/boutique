@@ -138,7 +138,7 @@ button.menu-toggle {
 
 .boutique-primary-navigation {
   clear: both;
-  background: #222;
+  background: #212121;
   -webkit-font-smoothing: antialiased; }
   .boutique-primary-navigation::after {
     clear: both;
@@ -148,7 +148,7 @@ button.menu-toggle {
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
 .site-header-cart .widget_shopping_cart {
-  background: #222; }
+  background: #212121; }
 
 .posted-on,
 .byline {
@@ -177,8 +177,6 @@ button.menu-toggle {
 
 .col-full,
 .header-widget-region {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 .header-widget-region {
@@ -309,16 +307,16 @@ ul.products li.product {
       top: 100%;
       left: 50%;
       border: .618em solid transparent;
-      border-top-color: #222;
+      border-top-color: #212121;
       margin-left: -.618em; }
   .main-navigation ul.menu ul,
   .main-navigation ul.nav-menu ul {
-    background: #222; }
+    background: #212121; }
   .main-navigation .smm-mega-menu {
     margin-left: 0;
     margin-right: 0;
     padding: 4.236em 5.874em;
-    background-color: #222 !important; }
+    background-color: #212121 !important; }
     .main-navigation .smm-mega-menu ul {
       background-color: transparent !important; }
 
