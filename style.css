@@ -324,6 +324,10 @@ ul.products li.product {
     .main-navigation .smm-mega-menu ul {
       background-color: transparent !important; }
 
+  .sd-sticky-navigation .main-navigation .smm-mega-menu {
+    margin-left: -5.874em;
+    margin-right: -5.874em; }
+
   .page-template-template-homepage-php .content-area {
     width: 73.9130434783%;
     float: left;
