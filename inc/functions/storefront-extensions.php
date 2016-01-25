@@ -16,6 +16,8 @@ function boutique_customize_register( $wp_customize ) {
 	$wp_customize->remove_control( 'sd_header_layout' );
 	$wp_customize->remove_control( 'sd_header_layout_divider_after' );
 	$wp_customize->remove_control( 'sd_header_sticky' );
+	$wp_customize->remove_control( 'sd_fixed_width' );
+	$wp_customize->remove_control( 'sd_content_background_color' );
 }
 add_action( 'customize_register', 'boutique_customize_register', 99 );
 
@@ -37,5 +39,7 @@ function boutique_set_theme_mods() {
 	remove_theme_mod( 'sph_hero_full_height' );
 	remove_theme_mod( 'sd_header_layout' );
 	remove_theme_mod( 'sd_header_sticky' );
+	remove_theme_mod( 'sd_fixed_width' );
+	remove_theme_mod( 'sd_content_background_color' );
 }
 add_action( 'after_switch_theme', 'boutique_set_theme_mods' );
