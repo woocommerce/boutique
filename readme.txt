@@ -18,6 +18,9 @@ Boutique is a child theme for Storefront meaning that both themes must be instal
 
 == Changelog ==
 
+= *2016.01.25* - 1.3.1 =
+* Tweak - Some general tweaks in preparation for Storefront 2.0.
+
 = *2015.12.07* - 1.3.0 =
 * New - Integration with Storefront Designer.
 

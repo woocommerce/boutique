@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.3.0
+Version:		1.3.1
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -18,7 +18,7 @@ Text Domain:	boutique
 
 @import 'bourbon';
 @import 'susy';
-@import '../storefront/sass/utils/variables';
+@import '../storefront/assets/sass/utils/variables';
 
 body {
 	background: #303030;
@@ -224,6 +224,10 @@ button.menu-toggle {
 
 .woocommerce-breadcrumb {
 	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .site-header-cart {
