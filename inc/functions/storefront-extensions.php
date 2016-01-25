@@ -14,6 +14,7 @@ function boutique_customize_register( $wp_customize ) {
 	$wp_customize->remove_control( 'sph_layout' );
 	$wp_customize->remove_control( 'sph_hero_full_height' );
 	$wp_customize->remove_control( 'sd_header_layout' );
+	$wp_customize->remove_control( 'sd_header_layout_divider_after' );
 	$wp_customize->remove_control( 'sd_header_sticky' );
 }
 add_action( 'customize_register', 'boutique_customize_register', 99 );
