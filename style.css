@@ -203,7 +203,8 @@ button.menu-toggle {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  background-color: transparent !important; }
 
 .site-header-cart {
   margin-bottom: 0; }
