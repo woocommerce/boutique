@@ -66,10 +66,15 @@ h6 {
 }
 
 // General Styles
+.storefront-product-section {
+	margin-bottom: 4.236em;
+}
+
 .storefront-product-section,
 .hentry {
 	border-bottom-style: double;
 	border-bottom-width: 3px;
+	border-bottom-color: rgba(0,0,0,.025);
 }
 
 .woocommerce-tabs ul.tabs li a,
@@ -78,8 +83,12 @@ h6 {
 	text-transform: uppercase;
 }
 
-.woocommerce-breadcrumb a {
-	text-transform: none;
+.woocommerce-breadcrumb {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+
+	a {
+		text-transform: none;
+	}
 }
 
 .woocommerce-error,
@@ -164,6 +173,7 @@ button.menu-toggle {
 
 .hentry .entry-header {
 	border-bottom-width: 0;
+	margin: 0 0 3.631em;
 }
 
 .widget h3.widget-title,
@@ -176,6 +186,7 @@ button.menu-toggle {
 
 .hentry .entry-header h1 {
 	border-bottom: 4px double rgba(0,0,0,0.1);
+	padding-bottom: .618em;
 }
 
 .cat-links:before {
