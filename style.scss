@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		1.3.1
+Version:		2.0.0
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -66,10 +66,15 @@ h6 {
 }
 
 // General Styles
+.storefront-product-section {
+	margin-bottom: 4.236em;
+}
+
 .storefront-product-section,
 .hentry {
 	border-bottom-style: double;
 	border-bottom-width: 3px;
+	border-bottom-color: rgba(0,0,0,.025);
 }
 
 .woocommerce-tabs ul.tabs li a,
@@ -78,8 +83,12 @@ h6 {
 	text-transform: uppercase;
 }
 
-.woocommerce-breadcrumb a {
-	text-transform: none;
+.woocommerce-breadcrumb {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+
+	a {
+		text-transform: none;
+	}
 }
 
 .woocommerce-error,
@@ -142,8 +151,6 @@ button.menu-toggle {
 }
 
 .boutique-primary-navigation {
-	clear: both;
-	background: #212121;
 	@include clearfix;
 	-webkit-font-smoothing: antialiased;
 }
@@ -164,6 +171,7 @@ button.menu-toggle {
 
 .hentry .entry-header {
 	border-bottom-width: 0;
+	margin: 0 0 3.631em;
 }
 
 .widget h3.widget-title,
@@ -176,6 +184,7 @@ button.menu-toggle {
 
 .hentry .entry-header h1 {
 	border-bottom: 4px double rgba(0,0,0,0.1);
+	padding-bottom: .618em;
 }
 
 .cat-links:before {
@@ -228,6 +237,7 @@ button.menu-toggle {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
+	background-color: transparent !important;
 }
 
 .site-header-cart {
@@ -355,6 +365,8 @@ ul.products {
 		box-shadow:
 			inset 0 1px 0 rgba(#fff, 0.1),
 			inset 0 -.53em  rgba(#000, 0.05);
+		background: #212121;
+		clear: both;
 	}
 
 	.site-branding, .site-search, .site-header-cart, .site-logo-anchor {
@@ -649,7 +661,7 @@ ul.products {
 	}
 
 	.boutique-primary-navigation {
-		padding-top: 1em;
+		padding-top: 0;
 		padding-bottom: 1em;
 
 		button.menu-toggle {
