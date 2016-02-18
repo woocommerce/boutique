@@ -120,7 +120,6 @@ class Boutique_Customizer {
 		$header_text_color 				= get_theme_mod( 'storefront_header_text_color' );
 
 		$style = '
-			.boutique-primary-navigation,
 			.main-navigation ul.menu > li > ul,
 			.main-navigation ul.menu ul,
 			.site-header-cart .widget_shopping_cart {
@@ -128,6 +127,7 @@ class Boutique_Customizer {
 			}
 
 			@media screen and (min-width: 768px) {
+				.boutique-primary-navigation,
 				.main-navigation ul.menu ul,
 				.main-navigation ul.nav-menu ul,
 				.main-navigation .smm-mega-menu,

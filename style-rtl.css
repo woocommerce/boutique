@@ -114,15 +114,15 @@ p.no-comments {
     text-decoration: underline; }
 
 .woocommerce-error {
-  border-left-color: #e2401c; }
+  border-right-color: #e2401c; }
 
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  border-left-color: #3D9CD2; }
+  border-right-color: #3D9CD2; }
 
 .woocommerce-message {
-  border-left-color: #0f834d; }
+  border-right-color: #0f834d; }
 
 .home.blog .site-header,
 .home.page:not(.page-template-template-homepage) .site-header,
@@ -206,10 +206,10 @@ button.menu-toggle {
 
 .woocommerce-breadcrumb {
   margin-top: 0;
-  margin-left: 0;
   margin-right: 0;
-  padding-left: 0;
+  margin-left: 0;
   padding-right: 0;
+  padding-left: 0;
   background-color: transparent !important; }
 
 .site-header-cart {
@@ -220,21 +220,21 @@ ul.products li.product {
   ul.products li.product .price {
     position: absolute;
     top: .618em;
-    right: 1px;
+    left: 1px;
     padding: .53em .857em;
     background: #555;
     color: #fff;
     font-weight: 700;
-    box-shadow: 5px 0 0 0 #555; }
+    box-shadow: -5px 0 0 0 #555; }
     ul.products li.product .price:after {
       content: "";
       display: block;
       position: absolute;
-      right: -5px;
+      left: -5px;
       top: 100%;
       border: 5px solid transparent;
       border-top-color: #222222;
-      border-left-width: 0; }
+      border-right-width: 0; }
     ul.products li.product .price del {
       font-weight: 400;
       opacity: 0.5; }
@@ -283,8 +283,8 @@ ul.products li.product {
     position: relative;
     margin: -5.874em;
     padding: 0 5.874em;
-    border-top-left-radius: 0.327em;
     border-top-right-radius: 0.327em;
+    border-top-left-radius: 0.327em;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -0.53em rgba(0, 0, 0, 0.05);
     background: #212121;
     clear: both; }
@@ -311,34 +311,34 @@ ul.products li.product {
       display: block;
       position: absolute;
       top: 100%;
-      left: 50%;
+      right: 50%;
       border: .618em solid transparent;
       border-top-color: #212121;
-      margin-left: -.618em; }
+      margin-right: -.618em; }
   .main-navigation ul.menu ul,
   .main-navigation ul.nav-menu ul {
     background: #212121; }
   .main-navigation .smm-mega-menu {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
     padding: 4.236em 5.874em;
     background-color: #212121 !important; }
     .main-navigation .smm-mega-menu ul {
       background-color: transparent !important; }
   .sd-sticky-navigation .main-navigation .smm-mega-menu {
-    margin-left: -5.874em;
-    margin-right: -5.874em; }
+    margin-right: -5.874em;
+    margin-left: -5.874em; }
   .page-template-template-homepage-php .content-area {
     width: 73.9130434783%;
-    float: left;
-    margin-right: 4.347826087%; }
+    float: right;
+    margin-left: 4.347826087%; }
     .page-template-template-homepage-php .content-area .columns-3 ul.products li.product {
       width: 29.4117647059%;
-      float: left;
-      margin-right: 5.8823529412%; }
+      float: right;
+      margin-left: 5.8823529412%; }
   .page-template-template-homepage-php .boutique-featured-products .storefront-product-section {
-    margin-left: -5.874em;
     margin-right: -5.874em;
+    margin-left: -5.874em;
     padding: 0 5.874em;
     background: rgba(0, 0, 0, 0.025);
     padding-top: 3.632em;
@@ -356,20 +356,20 @@ ul.products li.product {
       position: absolute; }
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h3 {
       top: 0;
-      left: 0;
+      right: 0;
       z-index: 99;
       -webkit-transition: all ease .2s;
       transition: all ease .2s;
       color: #f6f6f6;
       opacity: 0;
       width: 100%;
-      text-align: left;
+      text-align: right;
       padding: 1.618em;
       color: #303030;
       opacity: 0; }
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .price {
       bottom: 0;
-      right: 0;
+      left: 0;
       top: auto;
       z-index: 99; }
       .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .price span {
@@ -383,8 +383,8 @@ ul.products li.product {
         display: block;
         position: absolute;
         top: 0;
-        left: 0;
         right: 0;
+        left: 0;
         bottom: 0;
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid #fff;
@@ -397,8 +397,8 @@ ul.products li.product {
         display: block;
         position: absolute;
         top: .618em;
-        left: .618em;
         right: .618em;
+        left: .618em;
         bottom: .618em;
         border: 4px double rgba(0, 0, 0, 0.1);
         z-index: 9;
@@ -417,20 +417,20 @@ ul.products li.product {
     margin-top: 0 !important; }
     .page-template-template-homepage .content-area .sph-hero.full,
     .page-template-template-homepage .content-area .sprh-hero.full {
-      margin-left: 0 !important;
-      margin-right: 0 !important; }
+      margin-right: 0 !important;
+      margin-left: 0 !important; }
   .page-template-template-homepage .boutique-featured-products .sph-hero.full,
   .page-template-template-homepage .boutique-featured-products .sprh-hero.full {
-    margin-left: -5.874em;
-    margin-right: -5.874em; }
+    margin-right: -5.874em;
+    margin-left: -5.874em; }
   .page-template-template-homepage.left-sidebar .content-area {
     width: 73.9130434783%;
-    float: right;
-    margin-right: 0; }
+    float: left;
+    margin-left: 0; }
   .page-template-template-homepage.left-sidebar .widget-area {
     width: 21.7391304348%;
-    float: left;
-    margin-right: 4.347826087%; }
+    float: right;
+    margin-left: 4.347826087%; }
   .sph-hero .col-full,
   .sprh-hero .col-full {
     background-color: transparent;
@@ -448,12 +448,12 @@ ul.products li.product {
     margin: 0 1em; }
   .boutique-featured-products .sph-hero.full,
   .boutique-featured-products .sprh-hero.full {
-    margin-left: -1em;
-    margin-right: -1em; }
+    margin-right: -1em;
+    margin-left: -1em; }
   .boutique-featured-products .storefront-product-section,
   .boutique-primary-navigation {
-    margin-left: -1em;
     margin-right: -1em;
+    margin-left: -1em;
     padding: 0 1em; }
   .boutique-primary-navigation {
     padding-top: 0;
@@ -462,5 +462,5 @@ ul.products li.product {
       margin-top: 0; }
   .site-content .col-full,
   .site-footer .col-full {
-    padding-left: 1em;
-    padding-right: 1em; } }
+    padding-right: 1em;
+    padding-left: 1em; } }
