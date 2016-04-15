@@ -39,21 +39,22 @@ class Boutique_Customizer {
 	 */
 	public function get_boutique_defaults() {
 		return apply_filters( 'boutique_default_settings', $args = array(
-			'storefront_heading_color'					=> '#2b2b2b',
-			'storefront_footer_heading_color'			=> '#2b2b2b',
-			'storefront_button_text_color'				=> '#2b2b2b',
-			'storefront_header_background_color'		=> '#2b2b2b',
-			'storefront_footer_background_color'		=> '#2b2b2b',
-			'storefront_header_link_color'				=> '#ffffff',
-			'storefront_header_text_color'				=> '#ffffff',
-			'storefront_button_alt_text_color'			=> '#ffffff',
-			'storefront_footer_link_color'				=> '#111111',
-			'storefront_text_color'						=> '#777777',
-			'storefront_footer_text_color'				=> '#777777',
-			'storefront_accent_color'					=> '#7c7235',
-			'storefront_button_alt_background_color'	=> '#7c7235',
-			'storefront_background_color'				=> '#303030',
-			'storefront_button_background_color'		=> '#eeeeee',
+			'storefront_heading_color'               => '#2b2b2b',
+			'storefront_footer_heading_color'        => '#2b2b2b',
+			'storefront_button_text_color'           => '#2b2b2b',
+			'storefront_header_background_color'     => '#2b2b2b',
+			'storefront_footer_background_color'     => '#2b2b2b',
+			'storefront_header_link_color'           => '#ffffff',
+			'storefront_header_text_color'           => '#ffffff',
+			'storefront_button_alt_text_color'       => '#ffffff',
+			'storefront_footer_link_color'           => '#111111',
+			'storefront_text_color'                  => '#777777',
+			'storefront_footer_text_color'           => '#777777',
+			'storefront_accent_color'                => '#7c7235',
+			'storefront_button_alt_background_color' => '#7c7235',
+			'storefront_background_color'            => '#303030',
+			'storefront_button_background_color'     => '#eeeeee',
+			'background_color'                       => '#303030',
 		) );
 	}
 
@@ -124,6 +125,27 @@ class Boutique_Customizer {
 			.main-navigation ul.menu ul,
 			.site-header-cart .widget_shopping_cart {
 				background: ' . storefront_adjust_color_brightness( $header_background_color, -10 ) . ';
+			}
+
+			table th {
+				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -7 ) . ';
+			}
+
+			table tbody td {
+				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -2 ) . ';
+			}
+
+			table tbody tr:nth-child(2n) td {
+				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -4 ) . ';
+			}
+
+			#order_review, #payment .payment_methods li .payment_box {
+				background-color: #fafafa;
+			}
+
+			#payment .payment_methods li,
+			#payment .payment_methods li:hover {
+				background-color: #fff;
 			}
 
 			@media screen and (min-width: 768px) {

@@ -2,8 +2,8 @@
 Contributors: 		woothemes, jameskoster, tiagonoronha
 Tags: 				light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
-Tested up to: 		4.4.2
-Stable tag: 		2.0.1
+Tested up to: 		4.5.0
+Stable tag: 		2.0.2
 License: 			GPLv2 or later
 Image License: 		GPLv2 or later
 License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,8 +18,11 @@ Boutique is a child theme for Storefront meaning that both themes must be instal
 
 == Changelog ==
 
+= 2016.04.15 - 2.0.2 =
+* Fix - Order review and table background colors.
+
 = 2016.03.21 - 2.0.1 =
- * Tweak - Storefront 2.0.0 compatibility.
+* Tweak - Storefront 2.0.0 compatibility.
 
 = *2016.02.17* - 2.0.0 =
 * New - Underlying code structure rewritten to use a more efficient class structure.
