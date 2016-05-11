@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooThemes
 Author URI:		http://woothemes.com
 Template:		storefront
-Version:		2.0.3
+Version:		2.0.4
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -289,7 +289,11 @@ table.cart td.actions {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -0.53em rgba(0, 0, 0, 0.05);
     background: #212121;
     clear: both; }
-  .site-branding, .site-search, .site-header-cart, .site-logo-anchor {
+  .site-branding,
+  .site-search,
+  .site-header-cart,
+  .site-logo-anchor,
+  .custom-logo-link {
     margin-bottom: 4.236em; }
   .site-header {
     padding-top: 4.236em; }

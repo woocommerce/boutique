@@ -18,6 +18,10 @@ Boutique is a child theme for Storefront meaning that both themes must be instal
 
 == Changelog ==
 
+= 2016.05.11 -  2.0.4 =
+ * Tweak - Adopt Storefront 2.0's methods for applying default settings.
+ * Fix - Support for WordPress 4.5's custom logo feature.
+
 = 2016.04.21 - 2.0.3 =
 * Fix - Duplicated content on the homepage.
 
