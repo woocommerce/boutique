@@ -1,9 +1,9 @@
 === Boutique ===
 Contributors: 		woothemes, jameskoster, tiagonoronha
-Tags: 				light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Tags: 				e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Requires at least: 	4.0
-Tested up to: 		4.5.0
-Stable tag: 		2.0.3
+Tested up to: 		4.5.3
+Stable tag: 		2.0.5
 License: 			GPLv2 or later
 Image License: 		GPLv2 or later
 License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,9 @@ Storefront is a robust and flexible WordPress theme, designed by WooCommerce cre
 Boutique is a child theme for Storefront meaning that both themes must be installed if you want to run Boutique on your store.
 
 == Changelog ==
+
+= 2016.07.05 - 2.0.5 =
+ * Tweak - Author / Theme URL and Theme Tags.
 
 = 2016.05.11 -  2.0.4 =
  * Tweak - Adopt Storefront 2.0's methods for applying default settings.
