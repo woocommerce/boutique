@@ -143,7 +143,8 @@ class Boutique_Customizer {
 				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -4 ) . ';
 			}
 
-			#order_review, #payment .payment_methods li .payment_box {
+			#order_review, #payment .payment_methods li .payment_box,
+			#payment .place-order {
 				background-color: #fafafa;
 			}
 

@@ -28,9 +28,10 @@ class Boutique_Template {
 		add_action( 'boutique_before_homepage_content', 'storefront_homepage_content', 					10 );
 		add_action( 'boutique_before_homepage_content', 'storefront_featured_products',					20 );
 
-		add_filter( 'storefront_recent_products_args', 	array( $this, 'product_columns_three' ), 		99 );
-		add_filter( 'storefront_popular_products_args', array( $this, 'product_columns_three' ), 		99 );
-		add_filter( 'storefront_on_sale_products_args', array( $this, 'product_columns_three' ), 		99 );
+		add_filter( 'storefront_recent_products_args',       array( $this, 'product_columns_three' ),   99 );
+		add_filter( 'storefront_popular_products_args',      array( $this, 'product_columns_three' ),   99 );
+		add_filter( 'storefront_on_sale_products_args',      array( $this, 'product_columns_three' ),   99 );
+		add_filter( 'storefront_best_selling_products_args', array( $this, 'product_columns_three' ),   99 );
 	}
 
 	/**
