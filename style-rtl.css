@@ -58,7 +58,10 @@ h6 {
 .site-header {
   border-bottom: 0; }
 
-.site-branding h1 a {
+.site-branding .site-title {
+  font-family: 'Playfair Display', serif; }
+
+.site-branding .site-title a {
   font-weight: 400; }
 
 .storefront-product-section {
