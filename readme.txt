@@ -20,6 +20,7 @@ Boutique is a child theme for Storefront meaning that both themes must be instal
 
 = 2017.02.15 - 2.0.7 =
  * Tweak - Storefront 2.2.0 compatibility.
+ * Fix - Customizer PHP warning.
 
 = 2016.07.27 - 2.0.6 =
  * Fix - Header layout
