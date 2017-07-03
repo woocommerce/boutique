@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooCommerce
 Author URI:		http://woocommerce.com
 Template:		storefront
-Version:		2.0.8
+Version:		2.0.10
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -270,20 +270,22 @@ table.cart td.actions {
 .widget_recent_entries ul li:before, .widget_pages ul li:before {
   content: "\f15c" !important; }
 
+.page-template-template-homepage:not(.has-post-thumbnail) .site-main,
 .page-template-template-homepage .site-main {
   padding-top: 0; }
-  .page-template-template-homepage .site-main > .type-page:first-child {
-    width: auto !important;
-    margin-right: 0 !important; }
-    .page-template-template-homepage .site-main > .type-page:first-child.hentry .entry-header {
-      margin-right: auto;
-      margin-left: auto; }
-      .page-template-template-homepage .site-main > .type-page:first-child.hentry .entry-header h1 {
-        font-size: 2.618em; }
-    .page-template-template-homepage .site-main > .type-page:first-child .col-full {
-      padding: 0;
-      background: none;
-      box-shadow: none; }
+
+.page-template-template-homepage .site-main > .type-page:first-child {
+  width: auto !important;
+  margin-right: 0 !important; }
+  .page-template-template-homepage .site-main > .type-page:first-child.hentry .entry-header {
+    margin-right: auto;
+    margin-left: auto; }
+    .page-template-template-homepage .site-main > .type-page:first-child.hentry .entry-header h1 {
+      font-size: 2.618em; }
+  .page-template-template-homepage .site-main > .type-page:first-child .col-full {
+    padding: 0;
+    background: none;
+    box-shadow: none; }
 
 .content-area,
 .widget-area {

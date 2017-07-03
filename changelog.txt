@@ -1,5 +1,8 @@
 *** Boutique Changelog ***
 
+2017.07.03 - version 2.0.10
+ * Fix - Invalid default body color.
+
 2017.06.06 - version 2.0.9
  * Tweak - Remove homepage top padding.
 

@@ -57,7 +57,7 @@ class Boutique_Customizer {
 			'storefront_accent_color'                => '#7c7235',
 			'storefront_button_alt_background_color' => '#7c7235',
 			'storefront_button_background_color'     => '#eeeeee',
-			'background_color'                       => '#303030',
+			'background_color'                       => '303030',
 		) );
 	}
 
