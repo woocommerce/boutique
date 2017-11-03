@@ -5,7 +5,7 @@ Description:	A Storefront child theme designed for small WooCommerce stores / bo
 Author:			WooCommerce
 Author URI:		http://woocommerce.com
 Template:		storefront
-Version:		2.0.10
+Version:		2.0.11
 License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 Tags:			e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -57,6 +57,9 @@ h6 {
 
 .site-header {
   border-bottom: 0; }
+
+.no-wc-breadcrumb .site-header {
+  margin-bottom: 0; }
 
 .site-branding .site-title {
   font-family: 'Playfair Display', serif; }
@@ -154,6 +157,9 @@ button.menu-toggle {
     clear: both;
     content: "";
     display: table; }
+
+.no-wc-breadcrumb .storefront-primary-navigation {
+  padding-top: 2.618em; }
 
 .main-navigation ul.menu > li > ul,
 .main-navigation ul.menu ul,
