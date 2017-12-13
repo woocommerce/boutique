@@ -26,6 +26,7 @@ class Boutique_Customizer {
 		add_action( 'wp_enqueue_scripts', 	array( $this, 'add_customizer_css' ),						1000 );
 		add_action( 'customize_register', 	array( $this, 'edit_default_controls' ),					99 );
 		add_filter( 'storefront_setting_default_values', array( $this, 'get_boutique_defaults' ) );
+		add_filter( 'storefront_default_background_color', array( $this, 'default_background_color' ) );
 
 		/**
 		 * The following can be removed when Storefront 2.1 lands
@@ -170,6 +171,16 @@ class Boutique_Customizer {
 			}';
 
 		wp_add_inline_style( 'storefront-child-style', $style );
+	}
+
+	/**
+	 * Default background color.
+	 *
+	 * @param string $color Default color.
+	 * @return string
+	 */
+	public function default_background_color( $color ) {
+		return '303030';
 	}
 }
 
