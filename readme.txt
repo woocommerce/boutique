@@ -1,12 +1,12 @@
 === Boutique ===
-Contributors: 		woothemes, jameskoster, tiagonoronha
-Tags: 				e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
-Requires at least: 	4.0
-Tested up to: 		4.9.2
-Stable tag: 		2.0.12
-License: 			GPLv2 or later
-Image License: 		GPLv2 or later
-License URI: 		http://www.gnu.org/licenses/gpl-2.0.html
+Contributors:      automattic, jameskoster, tiagonoronha
+Tags:              e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Requires at least: 4.0
+Tested up to:      4.9.2
+Stable tag:        2.0.12
+License:           GPLv2 or later
+Image License:     GPLv2 or later
+License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 
 A Storefront child theme designed for small WooCommerce stores / boutiques. *Boutique* features a simple, traditional design which you can customise using the settings available in the WordPress Customizer. Looking for a theme for your new WooCommerce store? Look no further than Storefront and Boutique!
 
