@@ -21,6 +21,18 @@ class Boutique {
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
+		add_filter( 'storefront_woocommerce_args', array( $this, 'woocommerce_support' ) );
+	}
+
+	/**
+	 * Override Storefront default theme settings for WooCommerce.
+	 * @return array the modified arguments
+	 */
+	public function woocommerce_support( $args ) {
+		$args['single_image_width']    = 416;
+		$args['thumbnail_image_width'] = 324;
+
+		return $args;
 	}
 
 	/**
