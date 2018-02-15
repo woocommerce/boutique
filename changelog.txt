@@ -1,5 +1,8 @@
 *** Boutique Changelog ***
 
+2018.02.15 - version 2.0.13
+ * Tweak - Compatibility with WooCommerce 3.3.
+
 2018.01.23 - version 2.0.12
  * Fix - Filter default background color.
 
