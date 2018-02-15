@@ -29,8 +29,8 @@ class Boutique {
 	 * @return array the modified arguments
 	 */
 	public function woocommerce_support( $args ) {
-		$args['single_image_width']    = 438;
-		$args['thumbnail_image_width'] = 313;
+		$args['single_image_width']    = 416;
+		$args['thumbnail_image_width'] = 324;
 
 		return $args;
 	}
