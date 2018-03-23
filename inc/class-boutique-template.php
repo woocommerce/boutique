@@ -20,28 +20,44 @@ class Boutique_Template {
 	 * @since 1.0
 	 */
 	public function __construct() {
-		add_action( 'storefront_header', array( $this, 'primary_navigation_wrapper' ), 					45 );
-		add_action( 'storefront_header', array( $this, 'primary_navigation_wrapper_close' ), 			65 );
+		add_action( 'storefront_header',                     array( $this, 'primary_navigation_wrapper' ),       45 );
+		add_action( 'storefront_header',                     array( $this, 'primary_navigation_wrapper_close' ), 65 );
 
-		add_action( 'init', array( $this, 'remove_homepage_templates' ) );
+		add_action( 'wp',                                    array( $this, 'tweak_homepage_sections' ),          1000 );
 
-		add_action( 'boutique_before_homepage_content', 'storefront_homepage_content', 					10 );
-		add_action( 'boutique_before_homepage_content', 'storefront_featured_products',					20 );
-
-		add_filter( 'storefront_recent_products_args',       array( $this, 'product_columns_three' ),   99 );
-		add_filter( 'storefront_popular_products_args',      array( $this, 'product_columns_three' ),   99 );
-		add_filter( 'storefront_on_sale_products_args',      array( $this, 'product_columns_three' ),   99 );
-		add_filter( 'storefront_best_selling_products_args', array( $this, 'product_columns_three' ),   99 );
+		add_filter( 'storefront_recent_products_args',       array( $this, 'product_columns_three' ),            99 );
+		add_filter( 'storefront_popular_products_args',      array( $this, 'product_columns_three' ),            99 );
+		add_filter( 'storefront_on_sale_products_args',      array( $this, 'product_columns_three' ),            99 );
+		add_filter( 'storefront_best_selling_products_args', array( $this, 'product_columns_three' ),            99 );
 	}
 
 	/**
-	 * Remove unnecessary homepage templates
+	 * Tweak homepage sections
 	 *
 	 * @return void
 	 */
-	public function remove_homepage_templates() {
+	public function tweak_homepage_sections() {
+
+		// Remove sections from default location
 		remove_action( 'homepage', 'storefront_featured_products', 40 );
 		remove_action( 'homepage', 'storefront_homepage_content',  10 );
+
+		$homepage_content  = true;
+		$homepage_featured = true;
+
+		// Compatibility with Storefront Powerpack
+		if ( class_exists( 'Storefront_Powerpack' ) ) {
+			$homepage_content  = get_theme_mod( 'sp_homepage_content', true );
+			$homepage_featured = get_theme_mod( 'sp_homepage_featured', true );
+		}
+
+		if ( false !== $homepage_content ) {
+			add_action( 'boutique_before_homepage_content', 'storefront_homepage_content', 10 );
+		}
+
+		if ( false !== $homepage_featured ) {
+			add_action( 'boutique_before_homepage_content', 'storefront_featured_products',	20 );
+		}
 	}
 
 	/**
