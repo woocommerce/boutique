@@ -62,7 +62,8 @@ h6 {
   margin-bottom: 0; }
 
 .site-branding .site-title {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0; }
 
 .site-branding .site-title a {
   font-weight: 400; }
@@ -128,7 +129,7 @@ p.no-comments {
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  border-right-color: #3D9CD2; }
+  border-right-color: #3d9cd2; }
 
 .woocommerce-message {
   border-right-color: #0f834d; }

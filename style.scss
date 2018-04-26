@@ -18,7 +18,7 @@ Text Domain:	boutique
 
 @import 'bourbon';
 @import 'susy';
-@import '../storefront/assets/sass/utils/variables';
+@import '../storefront/assets/css/sass/utils/variables';
 
 body {
 	background: #303030;
@@ -73,6 +73,7 @@ h6 {
 
 .site-branding .site-title {
 	font-family: 'Playfair Display', serif;
+	letter-spacing: 0;
 }
 
 .site-branding .site-title a {
