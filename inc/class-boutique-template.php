@@ -24,6 +24,7 @@ class Boutique_Template {
 		add_action( 'storefront_header', array( $this, 'primary_navigation_wrapper_close' ), 			65 );
 
 		add_action( 'init', array( $this, 'remove_homepage_templates' ) );
+		add_action( 'init', array( $this, 'custom_storefront_markup' ) );
 
 		add_action( 'boutique_before_homepage_content', 'storefront_homepage_content', 					10 );
 		add_action( 'boutique_before_homepage_content', 'storefront_featured_products',					20 );
@@ -32,6 +33,33 @@ class Boutique_Template {
 		add_filter( 'storefront_popular_products_args',      array( $this, 'product_columns_three' ),   99 );
 		add_filter( 'storefront_on_sale_products_args',      array( $this, 'product_columns_three' ),   99 );
 		add_filter( 'storefront_best_selling_products_args', array( $this, 'product_columns_three' ),   99 );
+	}
+
+	/**
+	 * Remove the breadcrumb delimiter
+	 * @param  array $defaults The breadcrumb defaults
+	 * @return array           The breadcrumb defaults
+	 */
+	public function change_breadcrumb_delimiter( $defaults ) {
+		$defaults['wrap_before'] = '<nav class="woocommerce-breadcrumb">';
+		$defaults['wrap_after']  = '</nav>';
+		return $defaults;
+	}
+
+	/**
+	 * Custom markup tweaks
+	 * @return void
+	 */
+	public function custom_storefront_markup() {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			if ( storefront_is_woocommerce_activated() ) {
+				add_filter( 'woocommerce_breadcrumb_defaults', array( $this, 'change_breadcrumb_delimiter' ), 15 );
+				remove_action( 'storefront_before_content', 'woocommerce_breadcrumb', 10 );
+				add_action( 'storefront_content_top', 'woocommerce_breadcrumb', 10 );
+			}
+		}
 	}
 
 	/**

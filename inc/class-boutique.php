@@ -22,6 +22,23 @@ class Boutique {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
 		add_filter( 'storefront_woocommerce_args', array( $this, 'woocommerce_support' ) );
+		add_action( 'body_class', array( $this, 'body_classes' ) );
+	}
+
+	/**
+	 * Adds custom classes to the array of body classes.
+	 *
+	 * @param array $classes Classes for the body element.
+	 * @return array
+	 */
+	public function body_classes( $classes ) {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			$classes[] = 'storefront-2-3';
+		}
+
+		return $classes;
 	}
 
 	/**
