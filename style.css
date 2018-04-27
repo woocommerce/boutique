@@ -128,7 +128,7 @@ p.no-comments {
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-  border-left-color: #3D9CD2; }
+  border-left-color: #3d9cd2; }
 
 .woocommerce-message {
   border-left-color: #0f834d; }
@@ -501,3 +501,33 @@ table.cart td.actions {
   .site-footer .col-full {
     padding-left: 1em;
     padding-right: 1em; } }
+
+/**
+ * Storefront 2.3
+ */
+.storefront-2-3 .widget_product_categories ul li:before,
+.storefront-2-3 .widget_categories ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07b" !important; }
+
+.storefront-2-3 .widget_product_categories ul li.current-cat:before,
+.storefront-2-3 .widget_categories ul li.current-cat:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07b" !important; }
+
+.storefront-2-3 .widget_recent_comments ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f075" !important; }
+
+.storefront-2-3 .widget_archive ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f07c" !important; }
+
+.storefront-2-3 .widget_recent_entries ul li:before, .storefront-2-3 .widget_pages ul li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f15c" !important; }
