@@ -23,7 +23,8 @@ class Boutique_Template {
 		add_action( 'storefront_header',                     array( $this, 'primary_navigation_wrapper' ),       45 );
 		add_action( 'storefront_header',                     array( $this, 'primary_navigation_wrapper_close' ), 65 );
 
-		add_action( 'wp',                                    array( $this, 'tweak_homepage_sections' ),          1000 );
+		add_action( 'init',                                  array( $this, 'remove_homepage_templates' )         );
+		add_action( 'wp',                                    array( $this, 'move_homepage_sections' ),           1000 );
 
 		add_filter( 'storefront_recent_products_args',       array( $this, 'product_columns_three' ),            99 );
 		add_filter( 'storefront_popular_products_args',      array( $this, 'product_columns_three' ),            99 );
@@ -32,16 +33,21 @@ class Boutique_Template {
 	}
 
 	/**
-	 * Tweak homepage sections
+	 * Remove homepage sections from default location
 	 *
 	 * @return void
 	 */
-	public function tweak_homepage_sections() {
-
-		// Remove sections from default location
+	public function remove_homepage_templates() {
 		remove_action( 'homepage', 'storefront_featured_products', 40 );
 		remove_action( 'homepage', 'storefront_homepage_content',  10 );
+	}
 
+	/**
+	 * Add homepage sections to new location
+	 *
+	 * @return void
+	 */
+	public function move_homepage_sections() {
 		$homepage_content  = true;
 		$homepage_featured = true;
 
