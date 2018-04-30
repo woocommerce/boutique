@@ -62,7 +62,8 @@ h6 {
   margin-bottom: 0; }
 
 .site-branding .site-title {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0; }
 
 .site-branding .site-title a {
   font-weight: 400; }
