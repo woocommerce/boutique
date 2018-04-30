@@ -1,5 +1,11 @@
 *** Boutique Changelog ***
 
+2018.04.30 - version 2.0.14
+ * Tweak - Storefront 2.3.0 compatibility.
+ * Tweak - Enhanced compatibility with Storefront Powerpack homepage options.
+ * Fix - Consistent site title styling across all pages.
+ * Fix - Add sale badge to product loops.
+
 2018.02.15 - version 2.0.13
  * Tweak - Compatibility with WooCommerce 3.3.
 
