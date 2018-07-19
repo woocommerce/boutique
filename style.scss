@@ -546,12 +546,14 @@ table.cart {
 							display: none;
 						}
 
+						h2,
 						h3,
 						.price {
 							display: block;
 							position: absolute;
 						}
 
+						h2,
 						h3 {
 							top: 0;
 							left: 0;
@@ -574,7 +576,7 @@ table.cart {
 							z-index: 99;
 
 							span {
-								display: block;
+								display: inline;
 							}
 						}
 
@@ -618,6 +620,7 @@ table.cart {
 
 							&:hover {
 
+								h2,
 								h3,
 								&:after,
 								&:before {

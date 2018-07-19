@@ -386,10 +386,12 @@ table.cart td.actions {
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .button,
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .star-rating {
       display: none; }
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h2,
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h3,
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .price {
       display: block;
       position: absolute; }
+    .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h2,
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product h3 {
       top: 0;
       left: 0;
@@ -409,7 +411,7 @@ table.cart td.actions {
       top: auto;
       z-index: 99; }
       .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product .price span {
-        display: block; }
+        display: inline; }
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product img {
       margin: 0; }
     .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product > a {
@@ -441,6 +443,7 @@ table.cart td.actions {
         opacity: 0;
         -webkit-transition: all ease .2s;
         transition: all ease .2s; }
+      .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product > a:hover h2,
       .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product > a:hover h3, .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product > a:hover:after, .page-template-template-homepage-php .boutique-featured-products .storefront-product-section ul.products li.product > a:hover:before {
         opacity: 1; }
   .page-template-template-homepage-php .boutique-featured-products .hentry {
