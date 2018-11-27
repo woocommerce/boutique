@@ -19,10 +19,25 @@ class Boutique {
 	 * @since 1.0
 	 */
 	public function __construct() {
+		add_action( 'after_setup_theme', array( $this, 'setup' ), 20 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_child_styles' ), 99 );
 		add_filter( 'storefront_woocommerce_args', array( $this, 'woocommerce_support' ) );
 		add_action( 'body_class', array( $this, 'body_classes' ) );
+	}
+
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	public function setup() {
+		/**
+		 * Remove support for full and wide align images.
+		 */
+		remove_theme_support( 'align-wide' );
 	}
 
 	/**
