@@ -135,11 +135,13 @@ class Boutique_Customizer {
 				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -7 ) . ';
 			}
 
-			table tbody td {
+			table tbody td,
+			table.wp-block-table:not( .is-style-stripes ) tbody tr:nth-child(2n) td {
 				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -2 ) . ';
 			}
 
-			table tbody tr:nth-child(2n) td {
+			table tbody tr:nth-child(2n) td,
+			table.wp-block-table.is-style-stripes tbody tr:nth-child(2n) td {
 				background-color: ' . storefront_adjust_color_brightness( '#ffffff', -4 ) . ';
 			}
 
