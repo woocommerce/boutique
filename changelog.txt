@@ -1,5 +1,9 @@
 *** Boutique Changelog ***
 
+2018.12.06 - version 2.0.16
+ * Tweak - Storefront 2.4.0 compatibility.
+ * Fix - Add bottom margin to breadcrumb.
+
 2018.07.23 - version 2.0.15
  * Fix - Homepage featured products layout.
 
