@@ -12,16 +12,28 @@
     "npm": ">=1.1.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-uglify": "~0.9.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-wp-i18n": "^0.5.2",
-    "grunt-rtlcss": "~1.6.0",
-    "grunt-sass": "^1.0.0",
-    "node-sass": "^3.2.0",
-    "susy": "^2.2.5",
-    "node-bourbon": "~4.2.3",
-    "colors": "^1.1.2"
+    "autoprefixer": "^6.7.7",
+    "grunt": "~1.0.1",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "~2.1.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-uglify": "~2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-rtlcss": "~2.0.1",
+    "grunt-sass": "~2.0.0",
+    "grunt-stylelint": "~0.9.0",
+    "grunt-wp-i18n": "^1.0.0",
+    "node-bourbon": "~4.2.8",
+    "node-sass": "~4.5.2",
+    "stylelint": "~8.2.0",
+    "susy": "~2.2.12"
+  },
+  "scripts": {
+    "build": "grunt",
+    "css": "grunt css",
+    "watch": "grunt watch"
   }
 }
