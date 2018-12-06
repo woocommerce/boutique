@@ -100,7 +100,9 @@ h6 {
 }
 
 .woocommerce-breadcrumb {
+	background-color: transparent !important;
 	border-bottom: 1px solid rgba(0,0,0,.05);
+	margin: 0 0 1.618em;
 
 	a {
 		text-transform: none;
@@ -247,15 +249,6 @@ button.menu-toggle {
 		background: #f6f6f6;
 		padding: 1.618em;
 	}
-}
-
-.woocommerce-breadcrumb {
-	margin-top: 0;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 0;
-	padding-right: 0;
-	background-color: transparent !important;
 }
 
 .site-header-cart {

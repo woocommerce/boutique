@@ -83,7 +83,9 @@ h6 {
   text-transform: uppercase; }
 
 .woocommerce-breadcrumb {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 0 0 1.618em; }
   .woocommerce-breadcrumb a {
     text-transform: none; }
 
@@ -213,14 +215,6 @@ button.menu-toggle {
   .site-footer .col-full {
     background: #f6f6f6;
     padding: 1.618em; }
-
-.woocommerce-breadcrumb {
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: transparent !important; }
 
 .site-header-cart {
   margin-bottom: 0; }
