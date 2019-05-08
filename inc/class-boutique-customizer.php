@@ -42,24 +42,24 @@ class Boutique_Customizer {
 	 * Returns an array of the desired default Storefront options
 	 * @return array
 	 */
-	public function get_boutique_defaults() {
-		return apply_filters( 'boutique_default_settings', $args = array(
-			'storefront_heading_color'               => '#2b2b2b',
-			'storefront_footer_heading_color'        => '#2b2b2b',
-			'storefront_button_text_color'           => '#2b2b2b',
-			'storefront_header_background_color'     => '#2b2b2b',
-			'storefront_footer_background_color'     => '#2b2b2b',
-			'storefront_header_link_color'           => '#ffffff',
-			'storefront_header_text_color'           => '#ffffff',
-			'storefront_button_alt_text_color'       => '#ffffff',
-			'storefront_footer_link_color'           => '#111111',
-			'storefront_text_color'                  => '#777777',
-			'storefront_footer_text_color'           => '#777777',
-			'storefront_accent_color'                => '#7c7235',
-			'storefront_button_alt_background_color' => '#7c7235',
-			'storefront_button_background_color'     => '#eeeeee',
-			'background_color'                       => '303030',
-		) );
+	public function get_boutique_defaults( $defaults = array() ) {
+		$defaults['storefront_heading_color']               = '#2b2b2b';
+		$defaults['storefront_footer_heading_color']        = '#2b2b2b';
+		$defaults['storefront_button_text_color']           = '#2b2b2b';
+		$defaults['storefront_header_background_color']     = '#2b2b2b';
+		$defaults['storefront_footer_background_color']     = '#2b2b2b';
+		$defaults['storefront_header_link_color']           = '#ffffff';
+		$defaults['storefront_header_text_color']           = '#ffffff';
+		$defaults['storefront_button_alt_text_color']       = '#ffffff';
+		$defaults['storefront_footer_link_color']           = '#111111';
+		$defaults['storefront_text_color']                  = '#777777';
+		$defaults['storefront_footer_text_color']           = '#777777';
+		$defaults['storefront_accent_color']                = '#7c7235';
+		$defaults['storefront_button_alt_background_color'] = '#7c7235';
+		$defaults['storefront_button_background_color']     = '#eeeeee';
+		$defaults['background_color']                       = '303030';
+
+		return apply_filters( 'boutique_default_settings', $defaults );
 	}
 
 	/**
