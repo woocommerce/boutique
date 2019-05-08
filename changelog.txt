@@ -1,5 +1,8 @@
 *** Boutique Changelog ***
 
+2019.05.08 - version 2.0.17
+ * Fix - Correctly return default setting values in `storefront_setting_default_values()`.
+
 2018.12.06 - version 2.0.16
  * Tweak - Storefront 2.4.0 compatibility.
  * Fix - Add bottom margin to breadcrumb.
