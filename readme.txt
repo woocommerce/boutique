@@ -1,5 +1,5 @@
 === Boutique ===
-Contributors:      automattic, jameskoster, tiagonoronha
+Contributors:      woocommerce, automattic, jameskoster, tiagonoronha
 Tags:              e-commerce, light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Requires at least: 4.0
 Tested up to:      5.2
