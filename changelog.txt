@@ -1,5 +1,8 @@
 *** Boutique Changelog ***
 
+2021.06.21 - version 2.0.18
+ * Fix - Some styling fixes for WooCommerce Cart block.
+
 2019.05.08 - version 2.0.17
  * Fix - Correctly return default setting values in `storefront_setting_default_values()`.
 
