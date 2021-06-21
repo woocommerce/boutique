@@ -124,6 +124,7 @@ class Boutique_Customizer {
 		$header_background_color 		= get_theme_mod( 'storefront_header_background_color' );
 		$header_text_color 				= get_theme_mod( 'storefront_header_text_color' );
 		$button_background_color 				= get_theme_mod( 'storefront_button_background_color' );
+		$button_alt_text_color 				= get_theme_mod( 'storefront_button_alt_text_color' );
 
 		$style = '
 			.main-navigation ul.menu > li > ul,
@@ -176,7 +177,12 @@ class Boutique_Customizer {
 			.wc-block-components-order-summary-item__quantity {
 				background-color: '. $button_background_color .';
 				box-shadow: 0 0 0 2px '. $button_background_color .';
-			}'
+			}
+			
+			.wc-block-cart__submit-container {
+				background-color: '. $button_alt_text_color . ';
+			}
+			'
 		;
 
 		wp_add_inline_style( 'storefront-child-style', $style );
